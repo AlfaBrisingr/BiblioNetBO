@@ -78,6 +78,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -92,7 +93,18 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\modifier-texte-icone-4855-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dossier-icone-8757-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vide-trash-icone-8487-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fermer-croix-supprimer-erreurs-sortie-icone-4368-32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -30,10 +30,6 @@
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.TableauUser = new System.Windows.Forms.DataGridView();
-            this.BtnAnnuler = new System.Windows.Forms.Button();
-            this.BtnValider = new System.Windows.Forms.Button();
-            this.BtnSupprimer = new System.Windows.Forms.Button();
-            this.BtnModifier = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -50,6 +46,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.BoxNom = new System.Windows.Forms.TextBox();
             this.LblCode = new System.Windows.Forms.Label();
+            this.BtnAnnuler = new System.Windows.Forms.Button();
+            this.BtnValider = new System.Windows.Forms.Button();
+            this.BtnSupprimer = new System.Windows.Forms.Button();
+            this.BtnModifier = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -107,50 +107,6 @@
             this.TableauUser.Size = new System.Drawing.Size(636, 186);
             this.TableauUser.TabIndex = 1;
             this.TableauUser.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ClickCellule);
-            // 
-            // BtnAnnuler
-            // 
-            this.BtnAnnuler.Enabled = false;
-            this.BtnAnnuler.Location = new System.Drawing.Point(488, 243);
-            this.BtnAnnuler.Name = "BtnAnnuler";
-            this.BtnAnnuler.Size = new System.Drawing.Size(111, 33);
-            this.BtnAnnuler.TabIndex = 18;
-            this.BtnAnnuler.Text = "Annuler";
-            this.BtnAnnuler.UseVisualStyleBackColor = true;
-            this.BtnAnnuler.Click += new System.EventHandler(this.BtnAnnuler_Click);
-            // 
-            // BtnValider
-            // 
-            this.BtnValider.Enabled = false;
-            this.BtnValider.Location = new System.Drawing.Point(164, 243);
-            this.BtnValider.Name = "BtnValider";
-            this.BtnValider.Size = new System.Drawing.Size(109, 33);
-            this.BtnValider.TabIndex = 17;
-            this.BtnValider.Text = "Valider";
-            this.BtnValider.UseVisualStyleBackColor = true;
-            this.BtnValider.Click += new System.EventHandler(this.BtnValider_Click);
-            // 
-            // BtnSupprimer
-            // 
-            this.BtnSupprimer.Enabled = false;
-            this.BtnSupprimer.Location = new System.Drawing.Point(356, 243);
-            this.BtnSupprimer.Name = "BtnSupprimer";
-            this.BtnSupprimer.Size = new System.Drawing.Size(109, 33);
-            this.BtnSupprimer.TabIndex = 16;
-            this.BtnSupprimer.Text = "Supprimer";
-            this.BtnSupprimer.UseVisualStyleBackColor = true;
-            this.BtnSupprimer.Click += new System.EventHandler(this.BtnSupprimer_Click);
-            // 
-            // BtnModifier
-            // 
-            this.BtnModifier.Enabled = false;
-            this.BtnModifier.Location = new System.Drawing.Point(28, 243);
-            this.BtnModifier.Name = "BtnModifier";
-            this.BtnModifier.Size = new System.Drawing.Size(109, 33);
-            this.BtnModifier.TabIndex = 15;
-            this.BtnModifier.Text = "Modifier";
-            this.BtnModifier.UseVisualStyleBackColor = true;
-            this.BtnModifier.Click += new System.EventHandler(this.BtnModifier_Click);
             // 
             // label8
             // 
@@ -288,6 +244,58 @@
             this.LblCode.Size = new System.Drawing.Size(13, 13);
             this.LblCode.TabIndex = 19;
             this.LblCode.Text = "?";
+            // 
+            // BtnAnnuler
+            // 
+            this.BtnAnnuler.Enabled = false;
+            this.BtnAnnuler.Image = global::BiblioNet.Properties.Resources.fermer_croix_supprimer_erreurs_sortie_icone_4368_32;
+            this.BtnAnnuler.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAnnuler.Location = new System.Drawing.Point(488, 234);
+            this.BtnAnnuler.Name = "BtnAnnuler";
+            this.BtnAnnuler.Size = new System.Drawing.Size(125, 42);
+            this.BtnAnnuler.TabIndex = 18;
+            this.BtnAnnuler.Text = "Annuler";
+            this.BtnAnnuler.UseVisualStyleBackColor = true;
+            this.BtnAnnuler.Click += new System.EventHandler(this.BtnAnnuler_Click);
+            // 
+            // BtnValider
+            // 
+            this.BtnValider.Enabled = false;
+            this.BtnValider.Image = global::BiblioNet.Properties.Resources.dossier_icone_8757_32;
+            this.BtnValider.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnValider.Location = new System.Drawing.Point(164, 234);
+            this.BtnValider.Name = "BtnValider";
+            this.BtnValider.Size = new System.Drawing.Size(123, 42);
+            this.BtnValider.TabIndex = 17;
+            this.BtnValider.Text = "Valider";
+            this.BtnValider.UseVisualStyleBackColor = true;
+            this.BtnValider.Click += new System.EventHandler(this.BtnValider_Click);
+            // 
+            // BtnSupprimer
+            // 
+            this.BtnSupprimer.Enabled = false;
+            this.BtnSupprimer.Image = global::BiblioNet.Properties.Resources.vide_trash_icone_8487_32;
+            this.BtnSupprimer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSupprimer.Location = new System.Drawing.Point(356, 234);
+            this.BtnSupprimer.Name = "BtnSupprimer";
+            this.BtnSupprimer.Size = new System.Drawing.Size(123, 42);
+            this.BtnSupprimer.TabIndex = 16;
+            this.BtnSupprimer.Text = "Supprimer";
+            this.BtnSupprimer.UseVisualStyleBackColor = true;
+            this.BtnSupprimer.Click += new System.EventHandler(this.BtnSupprimer_Click);
+            // 
+            // BtnModifier
+            // 
+            this.BtnModifier.Enabled = false;
+            this.BtnModifier.Image = global::BiblioNet.Properties.Resources.modifier_texte_icone_4855_32;
+            this.BtnModifier.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnModifier.Location = new System.Drawing.Point(28, 234);
+            this.BtnModifier.Name = "BtnModifier";
+            this.BtnModifier.Size = new System.Drawing.Size(123, 42);
+            this.BtnModifier.TabIndex = 15;
+            this.BtnModifier.Text = "Modifier";
+            this.BtnModifier.UseVisualStyleBackColor = true;
+            this.BtnModifier.Click += new System.EventHandler(this.BtnModifier_Click);
             // 
             // GestionUtilisateurs
             // 

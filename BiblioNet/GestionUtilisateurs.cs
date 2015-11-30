@@ -88,7 +88,6 @@ namespace BiblioNet
                 BoxVille.Enabled = false;
                 BtnSupprimer.Enabled = true;
                 BtnModifier.Enabled = true;
-                MessageBox.Show(LblCode.Text);
                 Utilisateur UnUser = new Utilisateur(int.Parse(LblCode.Text), BoxNom.Text, BoxPrenom.Text, BoxMDP.Text, BoxMail.Text, BoxAdresse.Text, BoxCp.Text, BoxVille.Text);
                 M_Utilisateur.ModifUser(UnUser);
                 TableauUser.DataSource = M_Utilisateur.getLesUser();
@@ -114,6 +113,8 @@ namespace BiblioNet
                 BoxVille.Enabled = false;
                 BtnSupprimer.Enabled = true;
                 BtnModifier.Enabled = true;
+                Utilisateur User = M_Utilisateur.getUser(int.Parse(LblCode.Text));
+                AffecterValeurs(User);
             }
             catch (Exception ex)
             {
