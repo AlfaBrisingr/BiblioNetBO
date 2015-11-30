@@ -9,3 +9,13 @@ c:\users\ocean\documents\visual studio 2015\Projects\BiblioNet\BiblioNet\obj\Deb
 c:\users\ocean\documents\visual studio 2015\Projects\BiblioNet\BiblioNet\obj\Debug\BiblioNet.pdb
 c:\users\ocean\documents\visual studio 2015\Projects\BiblioNet\BiblioNet\obj\Debug\BiblioNet.GestionUtilisateurs.resources
 C:\Users\ocean\documents\visual studio 2015\Projects\BiblioNet\BiblioNet\bin\Debug\MySql.Data.dll
+C:\Users\Océane\Documents\GitHubVisualStudio\BiblioNetBO\BiblioNet\bin\Debug\BiblioNet.exe.config
+C:\Users\Océane\Documents\GitHubVisualStudio\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.exe
+C:\Users\Océane\Documents\GitHubVisualStudio\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.pdb
+C:\Users\Océane\Documents\GitHubVisualStudio\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.csprojResolveAssemblyReference.cache
+C:\Users\Océane\Documents\GitHubVisualStudio\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.BiblioNet.resources
+C:\Users\Océane\Documents\GitHubVisualStudio\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.GestionUtilisateurs.resources
+C:\Users\Océane\Documents\GitHubVisualStudio\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.Properties.Resources.resources
+C:\Users\Océane\Documents\GitHubVisualStudio\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.csproj.GenerateResource.Cache
+C:\Users\Océane\Documents\GitHubVisualStudio\BiblioNetBO\BiblioNet\bin\Debug\BiblioNet.exe
+C:\Users\Océane\Documents\GitHubVisualStudio\BiblioNetBO\BiblioNet\bin\Debug\BiblioNet.pdb
