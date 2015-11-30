@@ -1,0 +1,11 @@
+c:\users\ocean\documents\visual studio 2015\Projects\BiblioNet\BiblioNet\bin\Debug\BiblioNet.exe.config
+c:\users\ocean\documents\visual studio 2015\Projects\BiblioNet\BiblioNet\bin\Debug\BiblioNet.exe
+c:\users\ocean\documents\visual studio 2015\Projects\BiblioNet\BiblioNet\bin\Debug\BiblioNet.pdb
+c:\users\ocean\documents\visual studio 2015\Projects\BiblioNet\BiblioNet\obj\Debug\BiblioNet.csprojResolveAssemblyReference.cache
+c:\users\ocean\documents\visual studio 2015\Projects\BiblioNet\BiblioNet\obj\Debug\BiblioNet.BiblioNet.resources
+c:\users\ocean\documents\visual studio 2015\Projects\BiblioNet\BiblioNet\obj\Debug\BiblioNet.Properties.Resources.resources
+c:\users\ocean\documents\visual studio 2015\Projects\BiblioNet\BiblioNet\obj\Debug\BiblioNet.csproj.GenerateResource.Cache
+c:\users\ocean\documents\visual studio 2015\Projects\BiblioNet\BiblioNet\obj\Debug\BiblioNet.exe
+c:\users\ocean\documents\visual studio 2015\Projects\BiblioNet\BiblioNet\obj\Debug\BiblioNet.pdb
+c:\users\ocean\documents\visual studio 2015\Projects\BiblioNet\BiblioNet\obj\Debug\BiblioNet.GestionUtilisateurs.resources
+C:\Users\ocean\documents\visual studio 2015\Projects\BiblioNet\BiblioNet\bin\Debug\MySql.Data.dll
