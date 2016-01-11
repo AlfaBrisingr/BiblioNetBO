@@ -1,12 +1,14 @@
-﻿using System;
+﻿using BiblioNet.Models;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace BiblioNet.Classes
 {
-    class Utilisateur
+    public class Utilisateur
     {
         private int numUser;
         private string nom;
@@ -16,10 +18,11 @@ namespace BiblioNet.Classes
         private string adresse;
         private string codePostal;
         private string ville;
+        private Collection<Commande> mesCommandesUser;
 
         public Utilisateur()
         {
-
+            mesCommandesUser = new Collection<Commande>();
         }
 
         public int NumUser
@@ -127,6 +130,19 @@ namespace BiblioNet.Classes
   
         }
 
+        public Collection<Commande> MesCommandesUser
+        {
+            get
+            {
+                return mesCommandesUser;
+            }
+
+            set
+            {
+                mesCommandesUser = value;
+            }
+        }
+
         public Utilisateur(int Num, string NomU, string PrenomU, string mdp, string mail, string AdresseU, string CodeU, string VilleU)
         {
             this.numUser = Num;
@@ -137,7 +153,9 @@ namespace BiblioNet.Classes
             this.adresse = AdresseU;
             this.codePostal = CodeU;
             this.ville = VilleU;
+            mesCommandesUser = new Collection<Commande>();
         }
+
 
 
 

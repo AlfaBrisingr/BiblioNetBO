@@ -63,6 +63,16 @@ namespace BiblioNet.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap demarrer_icone_5230_32 {
+            get {
+                object obj = ResourceManager.GetObject("demarrer-icone-5230-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dossier_icone_8757_32 {
             get {
                 object obj = ResourceManager.GetObject("dossier-icone-8757-32", resourceCulture);
@@ -76,6 +86,36 @@ namespace BiblioNet.Properties {
         internal static System.Drawing.Bitmap fermer_croix_supprimer_erreurs_sortie_icone_4368_32 {
             get {
                 object obj = ResourceManager.GetObject("fermer-croix-supprimer-erreurs-sortie-icone-4368-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap finition_icone_9683_32 {
+            get {
+                object obj = ResourceManager.GetObject("finition-icone-9683-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fleche_a_cote_a_droite_icone_6873_32 {
+            get {
+                object obj = ResourceManager.GetObject("fleche-a-cote-a-droite-icone-6873-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fleche_erreur_a_gauche_precedente_icone_3917_32 {
+            get {
+                object obj = ResourceManager.GetObject("fleche-erreur-a-gauche-precedente-icone-3917-32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

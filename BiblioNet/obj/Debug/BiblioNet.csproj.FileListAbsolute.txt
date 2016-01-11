@@ -19,3 +19,4 @@ C:\Users\Océane\Documents\GitHubVisualStudio\BiblioNetBO\BiblioNet\obj\Debug\Bi
 C:\Users\Océane\Documents\GitHubVisualStudio\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.csproj.GenerateResource.Cache
 C:\Users\Océane\Documents\GitHubVisualStudio\BiblioNetBO\BiblioNet\bin\Debug\BiblioNet.exe
 C:\Users\Océane\Documents\GitHubVisualStudio\BiblioNetBO\BiblioNet\bin\Debug\BiblioNet.pdb
+C:\Users\Océane\Documents\GitHubVisualStudio\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.GestionCommande.resources

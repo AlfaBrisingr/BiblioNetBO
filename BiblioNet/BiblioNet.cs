@@ -33,5 +33,12 @@ namespace BiblioNet
         {
             Application.Exit();
         }
+
+        private void commandeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GestionCommande MaFenetreCommande = new GestionCommande();
+            MaFenetreCommande.MdiParent = this;
+            MaFenetreCommande.Show();
+        }
     }
 }
