@@ -54,6 +54,7 @@
       <DependentUpon>BiblioNet.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Commande.cs" />
+    <Compile Include="Classes\Livre.cs" />
     <Compile Include="Classes\Quantite.cs" />
     <Compile Include="Classes\Utilisateur.cs" />
     <Compile Include="GestionCommande.cs">
@@ -67,6 +68,12 @@
     </Compile>
     <Compile Include="GestionDetails.Designer.cs">
       <DependentUpon>GestionDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionLivre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionLivre.Designer.cs">
+      <DependentUpon>GestionLivre.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionUtilisateurs.cs">
       <SubType>Form</SubType>
@@ -85,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestionCommande.resx">
       <DependentUpon>GestionCommande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionLivre.resx">
+      <DependentUpon>GestionLivre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionUtilisateurs.resx">
       <DependentUpon>GestionUtilisateurs.cs</DependentUpon>

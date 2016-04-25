@@ -40,5 +40,12 @@ namespace BiblioNet
             MaFenetreCommande.MdiParent = this;
             MaFenetreCommande.Show();
         }
+
+        private void livresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GestionLivre MaFenetreLivre = new GestionLivre();
+            MaFenetreLivre.MdiParent = this;
+            MaFenetreLivre.Show();
+        }
     }
 }
