@@ -31,6 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.livresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.utilisateursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.commandeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aProposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -41,6 +42,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.livresToolStripMenuItem,
             this.utilisateursToolStripMenuItem,
+            this.commandeToolStripMenuItem,
             this.aProposToolStripMenuItem,
             this.quitterToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -54,6 +56,7 @@
             this.livresToolStripMenuItem.Name = "livresToolStripMenuItem";
             this.livresToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.livresToolStripMenuItem.Text = "Livres";
+            this.livresToolStripMenuItem.Click += new System.EventHandler(this.livresToolStripMenuItem_Click);
             // 
             // utilisateursToolStripMenuItem
             // 
@@ -61,6 +64,13 @@
             this.utilisateursToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
             this.utilisateursToolStripMenuItem.Text = "Utilisateurs";
             this.utilisateursToolStripMenuItem.Click += new System.EventHandler(this.utilisateursToolStripMenuItem_Click);
+            // 
+            // commandeToolStripMenuItem
+            // 
+            this.commandeToolStripMenuItem.Name = "commandeToolStripMenuItem";
+            this.commandeToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
+            this.commandeToolStripMenuItem.Text = "Commandes";
+            this.commandeToolStripMenuItem.Click += new System.EventHandler(this.commandeToolStripMenuItem_Click);
             // 
             // aProposToolStripMenuItem
             // 
@@ -100,6 +110,7 @@
         private System.Windows.Forms.ToolStripMenuItem utilisateursToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aProposToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quitterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem commandeToolStripMenuItem;
     }
 }
 

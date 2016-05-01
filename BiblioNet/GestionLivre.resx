@@ -117,29 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="fleche-a-cote-a-droite-icone-6873-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fleche-a-cote-a-droite-icone-6873-321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="demarrer-icone-5230-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\demarrer-icone-5230-321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="modifier-texte-icone-4855-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\modifier-texte-icone-4855-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fermer-croix-supprimer-erreurs-sortie-icone-4368-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fermer-croix-supprimer-erreurs-sortie-icone-4368-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fleche-erreur-a-gauche-precedente-icone-3917-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fleche-erreur-a-gauche-precedente-icone-3917-321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="vide-trash-icone-8487-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\vide-trash-icone-8487-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dossier-icone-8757-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dossier-icone-8757-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="finition-icone-9683-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\finition-icone-9683-321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAANBSURBVFhH7ZbbS9NhGMff/AeCLlIruu2+buoysERr
+        QjdWUF0kYRZBXdjUDrDqRoiQolCkbiK6iNnBWaaWiWa6TEHSme6Qm6zNnY/vb8en9/vbtOZpxpII9sID
+        z57D9/Pl93vZxvInf/6LQ0SITSIKEMlEgiWTiXSXyTlqC/30bLqb5WBwIXAcDgebt9sLXC7XFp/PtzsU
+        Ch2XJOlaLB5vTiQST+Px+JNoNHonHA6f9vv9uxDIUUMPM5jFDnahAS1oQhsngxkIBJhOp2Nms7nQZDKV
+        WiyW81artdU+P//Z5XI7vT5fPBAMUZhLJEWixKUIBUNh8gcCCa/Xa0YgRw09zGAWO9iFBrSgCW0wwAIT
+        bKa+tG/7eEfLCeGwy2g0RowmU3LWYiHrDxs5nE7yeH2yGJcyDfj8fvJ4PCQMyPnvBjCLHexCA1rQhDYY
+        YIEJNtM0lNQaP72KudweEk0MkXkVA5FodgOpmeUGoAltMGSWYILNOq4cUM2OvCW3x/sHBkIrGMDM+gyA
+        BSbYwkCJ6ntWA8GUgcVXsIaBxVcQXNMAmGCv20DmJVzdwK9LmIOBWfMGXEKhmcMTWHoHcruEf8FA7pfw
+        Dw3kL2HqFeQv4YZcQo34OsxqQIhLkQhFYzH5Ea/2BNBLzUTknWwGwGbt8hPoWmJgjmw2O4nfcRmAAAyf
+        xW86OYWoy+0mdzqQo4YeZhaMIfAZWtDMNNBFYLP2hhKVUdtJc1YbTU/P0IxeTwaDkQxiUK830DdR001N
+        0eSkjiYmJuVAPiVqejGLQL60jx3sQgNa0IQ2GGCBCTZrU+6/2ffwKg11q2lkoJvGhvtpTPuRRof76Mvg
+        Oxrpf03a92oa6nxMg+2tNPCiRcw+o/FRrYB9lQM5auhhBrPYwS40oAVNaIMBFphgs+azey+21R/0q68r
+        eNuto/x54yn+8nYV1zSd4W/uVfOeBzW8t+Uc/9BczXvvV/GeppNc03iMd96tifc/qiMEctTQw4w8K3aw
+        Cw1oQRPaYMgswQSbVe7ZvLW2rLi07lBxhbKsSHG5rFAOZXmRQtQU9Ye3LQtleXHFjSM7LjRW7lQhkKO2
+        0iw0oLWoKxhggQm2/Ccxf/Ln3x3GfgJq5g0C7MS6NAAAAABJRU5ErkJggg==
+</value>
   </data>
 </root>
