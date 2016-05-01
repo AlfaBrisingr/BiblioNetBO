@@ -40,9 +40,6 @@
             this.buttonPrecedent = new System.Windows.Forms.Button();
             this.buttonFin = new System.Windows.Forms.Button();
             this.buttonSuivant = new System.Windows.Forms.Button();
-            this.buttonRechercher = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.LblNom = new System.Windows.Forms.Label();
             this.LblPrenom = new System.Windows.Forms.Label();
             this.LblComande = new System.Windows.Forms.Label();
@@ -169,30 +166,6 @@
             this.buttonSuivant.UseVisualStyleBackColor = true;
             this.buttonSuivant.Click += new System.EventHandler(this.buttonSuivant_Click);
             // 
-            // buttonRechercher
-            // 
-            this.buttonRechercher.Location = new System.Drawing.Point(409, 376);
-            this.buttonRechercher.Name = "buttonRechercher";
-            this.buttonRechercher.Size = new System.Drawing.Size(90, 32);
-            this.buttonRechercher.TabIndex = 12;
-            this.buttonRechercher.Text = "Rechercher";
-            this.buttonRechercher.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(265, 383);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 13;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(55, 383);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 20);
-            this.textBox1.TabIndex = 14;
-            // 
             // LblNom
             // 
             this.LblNom.AutoSize = true;
@@ -228,9 +201,6 @@
             this.Controls.Add(this.LblComande);
             this.Controls.Add(this.LblPrenom);
             this.Controls.Add(this.LblNom);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.buttonRechercher);
             this.Controls.Add(this.buttonDebut);
             this.Controls.Add(this.buttonPrecedent);
             this.Controls.Add(this.buttonFin);
@@ -265,9 +235,6 @@
         private System.Windows.Forms.Button buttonFin;
         private System.Windows.Forms.Button buttonPrecedent;
         private System.Windows.Forms.Button buttonDebut;
-        private System.Windows.Forms.Button buttonRechercher;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label LblNom;
         private System.Windows.Forms.Label LblPrenom;
         private System.Windows.Forms.Label LblComande;

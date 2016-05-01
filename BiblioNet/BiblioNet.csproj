@@ -93,6 +93,9 @@
     <EmbeddedResource Include="GestionCommande.resx">
       <DependentUpon>GestionCommande.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GestionDetails.resx">
+      <DependentUpon>GestionDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionLivre.resx">
       <DependentUpon>GestionLivre.cs</DependentUpon>
     </EmbeddedResource>
