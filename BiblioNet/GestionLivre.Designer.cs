@@ -33,11 +33,10 @@
             this.buttonSuivant = new System.Windows.Forms.Button();
             this.buttonFin = new System.Windows.Forms.Button();
             this.buttonDebut = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BoutonAjouter = new System.Windows.Forms.Button();
+            this.BoutonAnnuler = new System.Windows.Forms.Button();
+            this.BoutonModifier = new System.Windows.Forms.Button();
+            this.BoutonValider = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.LabelNbPage = new System.Windows.Forms.Label();
             this.LabelPagueCourent = new System.Windows.Forms.Label();
@@ -63,6 +62,7 @@
             this.BoxEdition = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.BoxGenre = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonPrecedent
@@ -113,61 +113,54 @@
             this.buttonDebut.UseVisualStyleBackColor = true;
             this.buttonDebut.Click += new System.EventHandler(this.buttonDebut_Click);
             // 
-            // button5
+            // BoutonAjouter
             // 
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(307, 366);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(112, 38);
-            this.button5.TabIndex = 22;
-            this.button5.Text = "Ajouter";
-            this.button5.UseVisualStyleBackColor = true;
+            this.BoutonAjouter.Image = ((System.Drawing.Image)(resources.GetObject("BoutonAjouter.Image")));
+            this.BoutonAjouter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BoutonAjouter.Location = new System.Drawing.Point(186, 367);
+            this.BoutonAjouter.Name = "BoutonAjouter";
+            this.BoutonAjouter.Size = new System.Drawing.Size(112, 38);
+            this.BoutonAjouter.TabIndex = 22;
+            this.BoutonAjouter.Text = "Ajouter";
+            this.BoutonAjouter.UseVisualStyleBackColor = true;
+            this.BoutonAjouter.Click += new System.EventHandler(this.BoutonAjouter_Click);
             // 
-            // button4
+            // BoutonAnnuler
             // 
-            this.button4.Image = global::BiblioNet.Properties.Resources.fermer_croix_supprimer_erreurs_sortie_icone_4368_32;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(620, 366);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(112, 38);
-            this.button4.TabIndex = 21;
-            this.button4.Text = "Annuler";
-            this.button4.UseVisualStyleBackColor = true;
+            this.BoutonAnnuler.Image = global::BiblioNet.Properties.Resources.fermer_croix_supprimer_erreurs_sortie_icone_4368_32;
+            this.BoutonAnnuler.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BoutonAnnuler.Location = new System.Drawing.Point(500, 367);
+            this.BoutonAnnuler.Name = "BoutonAnnuler";
+            this.BoutonAnnuler.Size = new System.Drawing.Size(112, 38);
+            this.BoutonAnnuler.TabIndex = 21;
+            this.BoutonAnnuler.Text = "Annuler";
+            this.BoutonAnnuler.UseVisualStyleBackColor = true;
+            this.BoutonAnnuler.Click += new System.EventHandler(this.BoutonAnnuler_Click);
             // 
-            // button3
+            // BoutonModifier
             // 
-            this.button3.Image = global::BiblioNet.Properties.Resources.modifier_texte_icone_4855_32;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(3, 366);
-            this.button3.Name = "button3";
-            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button3.Size = new System.Drawing.Size(109, 38);
-            this.button3.TabIndex = 20;
-            this.button3.Text = "Modifier";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BoutonModifier.Image = global::BiblioNet.Properties.Resources.modifier_texte_icone_4855_32;
+            this.BoutonModifier.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BoutonModifier.Location = new System.Drawing.Point(42, 367);
+            this.BoutonModifier.Name = "BoutonModifier";
+            this.BoutonModifier.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.BoutonModifier.Size = new System.Drawing.Size(109, 38);
+            this.BoutonModifier.TabIndex = 20;
+            this.BoutonModifier.Text = "Modifier";
+            this.BoutonModifier.UseVisualStyleBackColor = true;
+            this.BoutonModifier.Click += new System.EventHandler(this.BoutonModifier_Click);
             // 
-            // button2
+            // BoutonValider
             // 
-            this.button2.Image = global::BiblioNet.Properties.Resources.dossier_icone_8757_32;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(157, 366);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(114, 38);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "Valider";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Image = global::BiblioNet.Properties.Resources.vide_trash_icone_8487_32;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(459, 366);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 38);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Suprimer";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BoutonValider.Image = global::BiblioNet.Properties.Resources.dossier_icone_8757_32;
+            this.BoutonValider.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BoutonValider.Location = new System.Drawing.Point(346, 367);
+            this.BoutonValider.Name = "BoutonValider";
+            this.BoutonValider.Size = new System.Drawing.Size(114, 38);
+            this.BoutonValider.TabIndex = 19;
+            this.BoutonValider.Text = "Valider";
+            this.BoutonValider.UseVisualStyleBackColor = true;
+            this.BoutonValider.Click += new System.EventHandler(this.BoutonValider_Click);
             // 
             // label1
             // 
@@ -375,11 +368,21 @@
             this.BoxGenre.Size = new System.Drawing.Size(148, 20);
             this.BoxGenre.TabIndex = 51;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(425, 69);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(13, 13);
+            this.label2.TabIndex = 52;
+            this.label2.Text = "€";
+            // 
             // GestionLivre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(744, 417);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.BoxGenre);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.BoxEdition);
@@ -409,13 +412,12 @@
             this.Controls.Add(this.buttonSuivant);
             this.Controls.Add(this.buttonFin);
             this.Controls.Add(this.buttonDebut);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BoutonAjouter);
+            this.Controls.Add(this.BoutonAnnuler);
+            this.Controls.Add(this.BoutonModifier);
+            this.Controls.Add(this.BoutonValider);
             this.Name = "GestionLivre";
-            this.Text = "-";
+            this.Text = "GestionLivre";
             this.Load += new System.EventHandler(this.GestionLivre_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -428,11 +430,10 @@
         private System.Windows.Forms.Button buttonSuivant;
         private System.Windows.Forms.Button buttonFin;
         private System.Windows.Forms.Button buttonDebut;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BoutonAjouter;
+        private System.Windows.Forms.Button BoutonAnnuler;
+        private System.Windows.Forms.Button BoutonModifier;
+        private System.Windows.Forms.Button BoutonValider;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label LabelNbPage;
         private System.Windows.Forms.Label LabelPagueCourent;
@@ -458,5 +459,6 @@
         private System.Windows.Forms.TextBox BoxEdition;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox BoxGenre;
+        private System.Windows.Forms.Label label2;
     }
 }

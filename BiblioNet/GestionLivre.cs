@@ -17,6 +17,7 @@ namespace BiblioNet
     {
         Collection<Livre> collLivre;
         int NumLivreCourante;
+        int TokenMandA;
         public GestionLivre()
         {
             InitializeComponent();
@@ -29,6 +30,21 @@ namespace BiblioNet
                 collLivre = new Collection<Livre>();
                 collLivre = M_Livre.getLivre();
                 NumLivreCourante = 1;
+                BoutonModifier.Enabled = true;
+                BoutonValider.Enabled = false;
+                BoutonAjouter.Enabled = true;
+                BoutonAnnuler.Enabled = false;
+                BoxNomLivre.Enabled = false;
+                BoxISBN.Enabled = false;
+                BoxNonAuteur.Enabled = false;
+                BoxQuantiteStock.Enabled = false;
+                BoxDateSortie.Enabled = false;
+                BoxTarif.Enabled = false;
+                BoxResume.Enabled = false;
+                BoxLangue.Enabled = false;
+                BoxEdition.Enabled = false;
+                BoxGenre.Enabled = false;
+
                 AffecterValeurs(collLivre[NumLivreCourante - 1]);
 
             }
@@ -115,6 +131,97 @@ namespace BiblioNet
         {
             NumLivreCourante = collLivre.Count;
             AffecterValeurs(collLivre[NumLivreCourante - 1]);
+        }
+
+        private void BoutonModifier_Click(object sender, EventArgs e)
+        {
+            buttonDebut.Enabled = false;
+            buttonFin.Enabled = false;
+            buttonPrecedent.Enabled = false;
+            buttonSuivant.Enabled = false;
+            BoutonModifier.Enabled = false;
+            BoutonValider.Enabled = true;
+            BoutonAjouter.Enabled = false;
+            BoutonAnnuler.Enabled = true;
+            BoxNomLivre.Enabled = false;
+            BoxISBN.Enabled = false;
+            BoxNonAuteur.Enabled = false;
+            BoxQuantiteStock.Enabled = true;
+            BoxDateSortie.Enabled = false;
+            BoxTarif.Enabled = true;
+            BoxResume.Enabled = true;
+            BoxLangue.Enabled = false;
+            BoxEdition.Enabled = false;
+            BoxGenre.Enabled = false;
+            TokenMandA = 1;
+        }
+
+        private void BoutonAjouter_Click(object sender, EventArgs e)
+        {
+            buttonDebut.Enabled = false;
+            buttonFin.Enabled = false;
+            buttonPrecedent.Enabled = false;
+            buttonSuivant.Enabled = false;
+            BoutonModifier.Enabled = false;
+            BoutonValider.Enabled = true;
+            BoutonAjouter.Enabled = false;
+            BoutonAnnuler.Enabled = true;
+            BoxNomLivre.Enabled = true;
+            BoxISBN.Enabled = true;
+            BoxNonAuteur.Enabled = true;
+            BoxQuantiteStock.Enabled = true;
+            BoxDateSortie.Enabled = true;
+            BoxTarif.Enabled = true;
+            BoxResume.Enabled = true;
+            BoxLangue.Enabled = true;
+            BoxEdition.Enabled = true;
+            BoxGenre.Enabled = true;
+            labNoLivre.Text = "x";
+            BoxISBN.Text = "";
+            BoxNomLivre.Text = "";
+            BoxNonAuteur.Text = "";
+            BoxQuantiteStock.Text = "";
+            BoxDateSortie.Text = "";
+            BoxTarif.Text = "";
+            BoxResume.Text = "";
+            BoxLangue.Text = "";
+            BoxEdition.Text = "";
+            BoxGenre.Text = "";
+            LabelNbPage.Text = "X";
+            LabelPagueCourent.Text ="X";
+        }
+
+        private void BoutonAnnuler_Click(object sender, EventArgs e)
+        {
+            BoutonModifier.Enabled = true;
+            BoutonValider.Enabled = false;
+            BoutonAjouter.Enabled = true;
+            BoutonAnnuler.Enabled = false;
+            BoxNomLivre.Enabled = false;
+            BoxISBN.Enabled = false;
+            BoxNonAuteur.Enabled = false;
+            BoxQuantiteStock.Enabled = false;
+            BoxDateSortie.Enabled = false;
+            BoxTarif.Enabled = false;
+            BoxResume.Enabled = false;
+            BoxLangue.Enabled = false;
+            BoxEdition.Enabled = false;
+            BoxGenre.Enabled = false;
+            AffecterValeurs(collLivre[NumLivreCourante - 1]);
+        }
+
+        private void BoutonValider_Click(object sender, EventArgs e)
+        {
+            if (TokenMandA == 1)
+            {
+                collLivre = new Collection<Livre>();
+                collLivre = M_Livre.getLivre();
+                BoutonModifier.Enabled = true;
+                BoutonValider.Enabled = false;
+                BoutonAjouter.Enabled = true;
+                BoutonAnnuler.Enabled = false;
+                AffecterValeurs(collLivre[NumLivreCourante - 1]);
+            }
         }
     }
            
