@@ -53,7 +53,10 @@
     <Compile Include="BiblioNet.Designer.cs">
       <DependentUpon>BiblioNet.cs</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Auteur.cs" />
     <Compile Include="Classes\Commande.cs" />
+    <Compile Include="Classes\Edition.cs" />
+    <Compile Include="Classes\Genre.cs" />
     <Compile Include="Classes\Livre.cs" />
     <Compile Include="Classes\Quantite.cs" />
     <Compile Include="Classes\Utilisateur.cs" />
@@ -83,6 +86,7 @@
     </Compile>
     <Compile Include="Models\bdd.cs" />
     <Compile Include="Models\M_Commande.cs" />
+    <Compile Include="Models\M_Livre.cs" />
     <Compile Include="Models\M_Quantite.cs" />
     <Compile Include="Models\M_Utilisateur.cs" />
     <Compile Include="Program.cs" />

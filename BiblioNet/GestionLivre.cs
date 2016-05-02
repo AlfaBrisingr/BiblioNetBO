@@ -28,8 +28,8 @@ namespace BiblioNet
                 collLivre = new Collection<Livre>();
                 collLivre = M_Livre.getLivres();
                 NumCommandeCourante = 1;
-                AffecterValeurs(collCommande[NumCommandeCourante - 1]);
-                collCommande[0].UnUser.MesCommandesUser = M_Commande.getCommandesUser(collCommande[0].UnUser);
+               /* AffecterValeurs(collCommande[NumCommandeCourante - 1]);
+                collCommande[0].UnUser.MesCommandesUser = M_Commande.getCommandesUser(collCommande[0].UnUser);*/
             }
             catch (Exception ex)
             {
