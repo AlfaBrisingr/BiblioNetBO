@@ -37,3 +37,16 @@ C:\Users\Oceane\Documents\GitHubVisualStudio\BiblioNetBO\BiblioNet\obj\Debug\Bib
 C:\Users\Oceane\Documents\GitHubVisualStudio\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.pdb
 C:\Users\Oceane\Documents\GitHubVisualStudio\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.csprojResolveAssemblyReference.cache
 C:\Users\nicol_000\Source\Repos\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.GestionDetails.resources
+D:\Documents\VisualStudioGitHub\BiblioNetBO\BiblioNet\bin\Debug\BiblioNet.exe.config
+D:\Documents\VisualStudioGitHub\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.exe
+D:\Documents\VisualStudioGitHub\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.pdb
+D:\Documents\VisualStudioGitHub\BiblioNetBO\BiblioNet\bin\Debug\BiblioNet.exe
+D:\Documents\VisualStudioGitHub\BiblioNetBO\BiblioNet\bin\Debug\BiblioNet.pdb
+D:\Documents\VisualStudioGitHub\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.csprojResolveAssemblyReference.cache
+D:\Documents\VisualStudioGitHub\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.BiblioNet.resources
+D:\Documents\VisualStudioGitHub\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.GestionCommande.resources
+D:\Documents\VisualStudioGitHub\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.GestionDetails.resources
+D:\Documents\VisualStudioGitHub\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.GestionLivre.resources
+D:\Documents\VisualStudioGitHub\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.GestionUtilisateurs.resources
+D:\Documents\VisualStudioGitHub\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.Properties.Resources.resources
+D:\Documents\VisualStudioGitHub\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.csproj.GenerateResource.Cache

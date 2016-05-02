@@ -21,7 +21,7 @@ namespace BiblioNet.Models
             {
                 bdd.GestBiblioNetConn.Open();
 
-                var sql = "SELECT Livre.Nom as 'Nom du Livre', Quantite.Quantite as 'Quantite', Livre.Tarif as 'Prix unitaire', (Livre.Tarif * Quantite.Quantite) as 'Montant HT (en euros)' FROM Quantite INNER JOIN Livre ON Livre.NumLivre = Quantite.NoLivres WHERE NumCommande = ?";
+                var sql = "SELECT Livre.Nom as 'Nom du Livre', Quantite.Quantite as 'Quantite', Livre.Tarif as 'Prix unitaire', (Livre.Tarif * Quantite.Quantite) as 'Montant HT (en euros)' FROM Quantite INNER JOIN Livre ON Livre.NumLivre = Quantite.NoLivres WHERE NoCommande = ?";
 
                 var da = new MySqlDataAdapter(sql, bdd.GestBiblioNetConn);
                 da.SelectCommand.Parameters.AddWithValue("@param", NoCommande);
