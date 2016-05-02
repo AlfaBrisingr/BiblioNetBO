@@ -39,8 +39,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.LabelNbPage = new System.Windows.Forms.Label();
+            this.LabelPagueCourent = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.labNoLivre = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -75,6 +75,7 @@
             this.buttonPrecedent.TabIndex = 26;
             this.buttonPrecedent.Text = "Précédent";
             this.buttonPrecedent.UseVisualStyleBackColor = true;
+            this.buttonPrecedent.Click += new System.EventHandler(this.buttonPrecedent_Click);
             // 
             // buttonSuivant
             // 
@@ -86,6 +87,7 @@
             this.buttonSuivant.TabIndex = 25;
             this.buttonSuivant.Text = "Suivant";
             this.buttonSuivant.UseVisualStyleBackColor = true;
+            this.buttonSuivant.Click += new System.EventHandler(this.buttonSuivant_Click);
             // 
             // buttonFin
             // 
@@ -97,6 +99,7 @@
             this.buttonFin.TabIndex = 24;
             this.buttonFin.Text = "Fin";
             this.buttonFin.UseVisualStyleBackColor = true;
+            this.buttonFin.Click += new System.EventHandler(this.buttonFin_Click);
             // 
             // buttonDebut
             // 
@@ -108,6 +111,7 @@
             this.buttonDebut.TabIndex = 23;
             this.buttonDebut.Text = "Debut";
             this.buttonDebut.UseVisualStyleBackColor = true;
+            this.buttonDebut.Click += new System.EventHandler(this.buttonDebut_Click);
             // 
             // button5
             // 
@@ -174,23 +178,23 @@
             this.label1.TabIndex = 27;
             this.label1.Text = "|";
             // 
-            // label2
+            // LabelNbPage
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(358, 310);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(13, 13);
-            this.label2.TabIndex = 28;
-            this.label2.Text = "?";
+            this.LabelNbPage.AutoSize = true;
+            this.LabelNbPage.Location = new System.Drawing.Point(358, 310);
+            this.LabelNbPage.Name = "LabelNbPage";
+            this.LabelNbPage.Size = new System.Drawing.Size(13, 13);
+            this.LabelNbPage.TabIndex = 28;
+            this.LabelNbPage.Text = "?";
             // 
-            // label3
+            // LabelPagueCourent
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(324, 310);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(13, 13);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "?";
+            this.LabelPagueCourent.AutoSize = true;
+            this.LabelPagueCourent.Location = new System.Drawing.Point(324, 310);
+            this.LabelPagueCourent.Name = "LabelPagueCourent";
+            this.LabelPagueCourent.Size = new System.Drawing.Size(13, 13);
+            this.LabelPagueCourent.TabIndex = 29;
+            this.LabelPagueCourent.Text = "?";
             // 
             // label4
             // 
@@ -398,8 +402,8 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.labNoLivre);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.LabelPagueCourent);
+            this.Controls.Add(this.LabelNbPage);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonPrecedent);
             this.Controls.Add(this.buttonSuivant);
@@ -430,8 +434,8 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label LabelNbPage;
+        private System.Windows.Forms.Label LabelPagueCourent;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label labNoLivre;
         private System.Windows.Forms.Label label6;
