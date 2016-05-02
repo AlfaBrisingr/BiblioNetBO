@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionLivre));
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.buttonPrecedent = new System.Windows.Forms.Button();
+            this.buttonSuivant = new System.Windows.Forms.Button();
+            this.buttonFin = new System.Windows.Forms.Button();
+            this.buttonDebut = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -42,7 +42,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.labNoLivre = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -58,52 +58,52 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.BoxResume = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button9
+            // buttonPrecedent
             // 
-            this.button9.Image = global::BiblioNet.Properties.Resources.fleche_erreur_a_gauche_precedente_icone_3917_32;
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(163, 301);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(108, 30);
-            this.button9.TabIndex = 26;
-            this.button9.Text = "Précédent";
-            this.button9.UseVisualStyleBackColor = true;
+            this.buttonPrecedent.Image = global::BiblioNet.Properties.Resources.fleche_erreur_a_gauche_precedente_icone_3917_32;
+            this.buttonPrecedent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonPrecedent.Location = new System.Drawing.Point(163, 301);
+            this.buttonPrecedent.Name = "buttonPrecedent";
+            this.buttonPrecedent.Size = new System.Drawing.Size(108, 30);
+            this.buttonPrecedent.TabIndex = 26;
+            this.buttonPrecedent.Text = "Précédent";
+            this.buttonPrecedent.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // buttonSuivant
             // 
-            this.button8.Image = global::BiblioNet.Properties.Resources.fleche_a_cote_a_droite_icone_6873_32;
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button8.Location = new System.Drawing.Point(459, 301);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(107, 30);
-            this.button8.TabIndex = 25;
-            this.button8.Text = "Suivant";
-            this.button8.UseVisualStyleBackColor = true;
+            this.buttonSuivant.Image = global::BiblioNet.Properties.Resources.fleche_a_cote_a_droite_icone_6873_32;
+            this.buttonSuivant.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonSuivant.Location = new System.Drawing.Point(459, 301);
+            this.buttonSuivant.Name = "buttonSuivant";
+            this.buttonSuivant.Size = new System.Drawing.Size(107, 30);
+            this.buttonSuivant.TabIndex = 25;
+            this.buttonSuivant.Text = "Suivant";
+            this.buttonSuivant.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // buttonFin
             // 
-            this.button7.Image = global::BiblioNet.Properties.Resources.finition_icone_9683_32;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button7.Location = new System.Drawing.Point(604, 301);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(108, 30);
-            this.button7.TabIndex = 24;
-            this.button7.Text = "Fin";
-            this.button7.UseVisualStyleBackColor = true;
+            this.buttonFin.Image = global::BiblioNet.Properties.Resources.finition_icone_9683_32;
+            this.buttonFin.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonFin.Location = new System.Drawing.Point(604, 301);
+            this.buttonFin.Name = "buttonFin";
+            this.buttonFin.Size = new System.Drawing.Size(108, 30);
+            this.buttonFin.TabIndex = 24;
+            this.buttonFin.Text = "Fin";
+            this.buttonFin.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // buttonDebut
             // 
-            this.button6.Image = global::BiblioNet.Properties.Resources.demarrer_icone_5230_32;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(23, 301);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(108, 30);
-            this.button6.TabIndex = 23;
-            this.button6.Text = "Debut";
-            this.button6.UseVisualStyleBackColor = true;
+            this.buttonDebut.Image = global::BiblioNet.Properties.Resources.demarrer_icone_5230_32;
+            this.buttonDebut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonDebut.Location = new System.Drawing.Point(23, 301);
+            this.buttonDebut.Name = "buttonDebut";
+            this.buttonDebut.Size = new System.Drawing.Size(108, 30);
+            this.buttonDebut.TabIndex = 23;
+            this.buttonDebut.Text = "Debut";
+            this.buttonDebut.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
@@ -197,14 +197,14 @@
             this.label4.TabIndex = 30;
             this.label4.Text = "Livre n° :";
             // 
-            // label5
+            // labNoLivre
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(347, 16);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(13, 13);
-            this.label5.TabIndex = 31;
-            this.label5.Text = "?";
+            this.labNoLivre.AutoSize = true;
+            this.labNoLivre.Location = new System.Drawing.Point(347, 16);
+            this.labNoLivre.Name = "labNoLivre";
+            this.labNoLivre.Size = new System.Drawing.Size(13, 13);
+            this.labNoLivre.TabIndex = 31;
+            this.labNoLivre.Text = "?";
             // 
             // label6
             // 
@@ -245,7 +245,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(20, 111);
+            this.label10.Location = new System.Drawing.Point(20, 102);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(63, 13);
             this.label10.TabIndex = 36;
@@ -254,7 +254,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(217, 107);
+            this.label11.Location = new System.Drawing.Point(217, 98);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(34, 13);
             this.label11.TabIndex = 37;
@@ -263,7 +263,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(23, 182);
+            this.label12.Location = new System.Drawing.Point(20, 198);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(52, 13);
             this.label12.TabIndex = 38;
@@ -272,7 +272,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(23, 140);
+            this.label13.Location = new System.Drawing.Point(20, 125);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(49, 13);
             this.label13.TabIndex = 39;
@@ -308,39 +308,39 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(99, 104);
+            this.textBox5.Location = new System.Drawing.Point(99, 95);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 20);
             this.textBox5.TabIndex = 44;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(295, 104);
+            this.textBox6.Location = new System.Drawing.Point(295, 95);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 20);
             this.textBox6.TabIndex = 45;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(100, 137);
+            this.textBox7.Location = new System.Drawing.Point(97, 122);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 20);
             this.textBox7.TabIndex = 46;
             // 
-            // textBox8
+            // BoxResume
             // 
-            this.textBox8.Location = new System.Drawing.Point(100, 179);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(295, 100);
-            this.textBox8.TabIndex = 47;
+            this.BoxResume.Location = new System.Drawing.Point(97, 195);
+            this.BoxResume.Multiline = true;
+            this.BoxResume.Name = "BoxResume";
+            this.BoxResume.Size = new System.Drawing.Size(295, 100);
+            this.BoxResume.TabIndex = 47;
             // 
             // GestionLivre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(744, 417);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.BoxResume);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
@@ -356,15 +356,15 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.labNoLivre);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.buttonPrecedent);
+            this.Controls.Add(this.buttonSuivant);
+            this.Controls.Add(this.buttonFin);
+            this.Controls.Add(this.buttonDebut);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -372,6 +372,7 @@
             this.Controls.Add(this.button1);
             this.Name = "GestionLivre";
             this.Text = "-";
+            this.Load += new System.EventHandler(this.GestionLivre_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -379,10 +380,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button buttonPrecedent;
+        private System.Windows.Forms.Button buttonSuivant;
+        private System.Windows.Forms.Button buttonFin;
+        private System.Windows.Forms.Button buttonDebut;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
@@ -392,7 +393,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labNoLivre;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
@@ -408,6 +409,6 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox BoxResume;
     }
 }

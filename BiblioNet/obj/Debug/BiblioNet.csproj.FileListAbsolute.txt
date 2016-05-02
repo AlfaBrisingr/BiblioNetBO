@@ -36,3 +36,4 @@ C:\Users\Oceane\Documents\GitHubVisualStudio\BiblioNetBO\BiblioNet\bin\Debug\Bib
 C:\Users\Oceane\Documents\GitHubVisualStudio\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.exe
 C:\Users\Oceane\Documents\GitHubVisualStudio\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.pdb
 C:\Users\Oceane\Documents\GitHubVisualStudio\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.csprojResolveAssemblyReference.cache
+C:\Users\nicol_000\Source\Repos\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.GestionDetails.resources

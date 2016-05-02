@@ -16,20 +16,21 @@ namespace BiblioNet
     public partial class GestionLivre : Form
     {
         Collection<Livre> collLivre;
-        int NumCommandeCourante;
+        int NumLivreCourante;
         public GestionLivre()
         {
             InitializeComponent();
         }
+
         private void GestionLivre_Load(object sender, EventArgs e)
         {
             try
             {
                 collLivre = new Collection<Livre>();
-                collLivre = M_Livre.getLivres();
-                NumCommandeCourante = 1;
-               /* AffecterValeurs(collCommande[NumCommandeCourante - 1]);
-                collCommande[0].UnUser.MesCommandesUser = M_Commande.getCommandesUser(collCommande[0].UnUser);*/
+                collLivre = M_Livre.getLivre();
+                NumLivreCourante = 1;
+                AffecterValeurs(collLivre[NumLivreCourante - 1]);
+
             }
             catch (Exception ex)
             {
@@ -37,6 +38,18 @@ namespace BiblioNet
             }
 
         }
-
+        private void AffecterValeurs(Livre unlivre)
+        {
+            BoxResume.Text = unlivre.Resume1;
+            VerouillerBouton();
+        }
+        public void VerouillerBouton()
+        {
+            buttonDebut.Enabled = false;
+            buttonFin.Enabled = false;
+            buttonPrecedent.Enabled = false;
+            buttonSuivant.Enabled = false;
+        }
     }
-}
+    }
+
