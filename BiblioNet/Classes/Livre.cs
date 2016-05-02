@@ -9,7 +9,7 @@ namespace BiblioNet.Classes
     class Livre
     {
         private int numLivre;
-        private int CodeISBN;
+        private String CodeISBN;
         private String NonLivre;
         private Auteur UnAuteur;
         private int QuantiteStock;
@@ -21,10 +21,24 @@ namespace BiblioNet.Classes
         private Edition uneEdition;
         private Genre UnGenre;
 
-        public Livre() {
+        public Livre(int numLivre ,String CodeISBN, String NonLivre, Auteur UnAuteur, int QuantiteStock, DateTime DateSortie, int Tarif, String Resume, String Langue,String couverture, Edition uneEdition, Genre UnGenre)
+        {
+            this.numLivre = numLivre;
+            this.CodeISBN = CodeISBN;
+            this.NonLivre = NonLivre;
+            this.QuantiteStock = QuantiteStock;
+            this.DateSortie = DateSortie;
+            this.Tarif = Tarif;
+            this.Resume = Resume;
+            this.Langue = Langue;
+            this.couverture = couverture;
+            this.uneEdition = uneEdition;
+            this.UnGenre = UnGenre;
+
         }
         public int NumLivre
         {
+
             get
             {
                 return numLivre;
@@ -33,6 +47,19 @@ namespace BiblioNet.Classes
             set
             {
                 numLivre = value;
+            }
+        }
+
+        public String CodeISBN1
+        {
+            get
+            {
+                return CodeISBN;
+            }
+
+            set
+            {
+                CodeISBN = value;
             }
         }
 
@@ -49,29 +76,16 @@ namespace BiblioNet.Classes
             }
         }
 
-        public int CodeISBN1
+        internal Auteur UnAuteur1
         {
             get
             {
-                return CodeISBN;
+                return UnAuteur;
             }
 
             set
             {
-                CodeISBN = value;
-            }
-        }
-
-        public string Auteur1
-        {
-            get
-            {
-                return Auteur;
-            }
-
-            set
-            {
-                Auteur = value;
+                UnAuteur = value;
             }
         }
 
@@ -127,42 +141,16 @@ namespace BiblioNet.Classes
             }
         }
 
-        public string Langaque1
+        public string Langue1
         {
             get
             {
-                return Langaque;
+                return Langue;
             }
 
             set
             {
-                Langaque = value;
-            }
-        }
-
-        public string Edition1
-        {
-            get
-            {
-                return Edition;
-            }
-
-            set
-            {
-                Edition = value;
-            }
-        }
-
-        public string Genre1
-        {
-            get
-            {
-                return Genre;
-            }
-
-            set
-            {
-                Genre = value;
+                Langue = value;
             }
         }
 
@@ -178,5 +166,34 @@ namespace BiblioNet.Classes
                 couverture = value;
             }
         }
+
+        internal Edition UneEdition
+        {
+            get
+            {
+                return uneEdition;
+            }
+
+            set
+            {
+                uneEdition = value;
+            }
+        }
+
+        internal Genre UnGenre1
+        {
+            get
+            {
+                return UnGenre;
+            }
+
+            set
+            {
+                UnGenre = value;
+            }
+        }
+
+     
     }
 }
+       
