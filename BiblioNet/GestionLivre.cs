@@ -44,6 +44,12 @@ namespace BiblioNet
             BoxISBN.Text = unlivre.CodeISBN1.ToString();
             BoxNomLivre.Text = unlivre.NonLivre1.ToString();
             BoxNonAuteur.Text = unlivre.UnAuteur1.NonAuteur1.ToString();
+            BoxQuantiteStock.Text = unlivre.QuantiteStock1.ToString();
+            BoxDateSortie.Text = unlivre.DateSortie1.ToString();
+            BoxTarif.Text = unlivre.Tarif1.ToString();
+            BoxResume.Text = unlivre.Resume1.ToString();
+            BoxLangue.Text = unlivre.Langue1.ToString();
+            BoxEdition.Text = unlivre.UneEdition.ToString();
             VerouillerBouton();
         }
         public void VerouillerBouton()

@@ -54,11 +54,15 @@
             this.BoxISBN = new System.Windows.Forms.TextBox();
             this.BoxNomLivre = new System.Windows.Forms.TextBox();
             this.BoxNonAuteur = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.BoxQuantiteStock = new System.Windows.Forms.TextBox();
+            this.BoxDateSortie = new System.Windows.Forms.TextBox();
             this.BoxTarif = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.BoxLangue = new System.Windows.Forms.TextBox();
             this.BoxResume = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.BoxEdition = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.BoxGenre = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // buttonPrecedent
@@ -254,7 +258,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(217, 98);
+            this.label11.Location = new System.Drawing.Point(347, 69);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(34, 13);
             this.label11.TabIndex = 37;
@@ -299,33 +303,33 @@
             this.BoxNonAuteur.Size = new System.Drawing.Size(99, 20);
             this.BoxNonAuteur.TabIndex = 42;
             // 
-            // textBox4
+            // BoxQuantiteStock
             // 
-            this.textBox4.Location = new System.Drawing.Point(295, 66);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 43;
+            this.BoxQuantiteStock.Location = new System.Drawing.Point(295, 66);
+            this.BoxQuantiteStock.Name = "BoxQuantiteStock";
+            this.BoxQuantiteStock.Size = new System.Drawing.Size(42, 20);
+            this.BoxQuantiteStock.TabIndex = 43;
             // 
-            // textBox5
+            // BoxDateSortie
             // 
-            this.textBox5.Location = new System.Drawing.Point(99, 95);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 44;
+            this.BoxDateSortie.Location = new System.Drawing.Point(99, 95);
+            this.BoxDateSortie.Name = "BoxDateSortie";
+            this.BoxDateSortie.Size = new System.Drawing.Size(100, 20);
+            this.BoxDateSortie.TabIndex = 44;
             // 
             // BoxTarif
             // 
-            this.BoxTarif.Location = new System.Drawing.Point(295, 95);
+            this.BoxTarif.Location = new System.Drawing.Point(387, 66);
             this.BoxTarif.Name = "BoxTarif";
-            this.BoxTarif.Size = new System.Drawing.Size(100, 20);
+            this.BoxTarif.Size = new System.Drawing.Size(32, 20);
             this.BoxTarif.TabIndex = 45;
             // 
-            // textBox7
+            // BoxLangue
             // 
-            this.textBox7.Location = new System.Drawing.Point(97, 122);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 46;
+            this.BoxLangue.Location = new System.Drawing.Point(97, 122);
+            this.BoxLangue.Name = "BoxLangue";
+            this.BoxLangue.Size = new System.Drawing.Size(100, 20);
+            this.BoxLangue.TabIndex = 46;
             // 
             // BoxResume
             // 
@@ -335,16 +339,52 @@
             this.BoxResume.Size = new System.Drawing.Size(295, 100);
             this.BoxResume.TabIndex = 47;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(217, 95);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(45, 13);
+            this.label5.TabIndex = 48;
+            this.label5.Text = "Edition :";
+            // 
+            // BoxEdition
+            // 
+            this.BoxEdition.Location = new System.Drawing.Point(295, 95);
+            this.BoxEdition.Name = "BoxEdition";
+            this.BoxEdition.Size = new System.Drawing.Size(147, 20);
+            this.BoxEdition.TabIndex = 49;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(220, 125);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(36, 13);
+            this.label14.TabIndex = 50;
+            this.label14.Text = "Genre";
+            // 
+            // BoxGenre
+            // 
+            this.BoxGenre.Location = new System.Drawing.Point(293, 127);
+            this.BoxGenre.Name = "BoxGenre";
+            this.BoxGenre.Size = new System.Drawing.Size(148, 20);
+            this.BoxGenre.TabIndex = 51;
+            // 
             // GestionLivre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(744, 417);
+            this.Controls.Add(this.BoxGenre);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.BoxEdition);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.BoxResume);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.BoxLangue);
             this.Controls.Add(this.BoxTarif);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.BoxDateSortie);
+            this.Controls.Add(this.BoxQuantiteStock);
             this.Controls.Add(this.BoxNonAuteur);
             this.Controls.Add(this.BoxNomLivre);
             this.Controls.Add(this.BoxISBN);
@@ -405,10 +445,14 @@
         private System.Windows.Forms.TextBox BoxISBN;
         private System.Windows.Forms.TextBox BoxNomLivre;
         private System.Windows.Forms.TextBox BoxNonAuteur;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox BoxQuantiteStock;
+        private System.Windows.Forms.TextBox BoxDateSortie;
         private System.Windows.Forms.TextBox BoxTarif;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox BoxLangue;
         private System.Windows.Forms.TextBox BoxResume;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox BoxEdition;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox BoxGenre;
     }
 }

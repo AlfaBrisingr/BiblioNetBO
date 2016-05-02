@@ -12,29 +12,29 @@ namespace BiblioNet.Classes
         private String CodeISBN;
         private String NonLivre;
         private Auteur UnAuteur;
-        /*private int QuantiteStock;
+        private int QuantiteStock;
         private String DateSortie;
-        private int Tarif;
+        private String Tarif;
         private String Resume;
         private String Langue;
         private String couverture;
         private Edition uneEdition;
-        private Genre UnGenre;*/
+        private Genre UnGenre;
 
-        public Livre(int numLivre ,String CodeISBN, String NonLivre, Auteur UnAuteur/*, int QuantiteStock, String DateSortie, int Tarif, String Resume, String Langue,String couverture, Edition uneEdition, Genre UnGenre)*/)
+        public Livre(int numLivre ,String CodeISBN, String NonLivre, Auteur UnAuteur, int QuantiteStock , String DateSortie , String Tarif, String Resume, String Langue ,String couverture , Edition uneEdition, Genre UnGenre)
         {
             this.numLivre = numLivre;
             this.CodeISBN = CodeISBN;
             this.NonLivre = NonLivre;
             this.UnAuteur = UnAuteur;
-            /*this.QuantiteStock = QuantiteStock;
+            this.QuantiteStock = QuantiteStock;
             this.DateSortie = DateSortie;
             this.Tarif = Tarif;
             this.Resume = Resume;
             this.Langue = Langue;
             this.couverture = couverture;
             this.uneEdition = uneEdition;
-            this.UnGenre = UnGenre;*/
+           this.UnGenre = UnGenre;
 
         }
         public int NumLivre
@@ -89,7 +89,7 @@ namespace BiblioNet.Classes
                 UnAuteur = value;
             }
         }
-        /*
+        
         public int QuantiteStock1
         {
             get
@@ -102,7 +102,7 @@ namespace BiblioNet.Classes
                 QuantiteStock = value;
             }
         }
-
+        
         public String DateSortie1
         {
             get
@@ -115,8 +115,8 @@ namespace BiblioNet.Classes
                 DateSortie = value;
             }
         }
-
-        public int Tarif1
+        
+        public String Tarif1
         {
             get
             {
@@ -128,7 +128,6 @@ namespace BiblioNet.Classes
                 Tarif = value;
             }
         }
-
         public string Resume1
         {
             get
@@ -141,7 +140,7 @@ namespace BiblioNet.Classes
                 Resume = value;
             }
         }
-
+        
         public string Langue1
         {
             get
@@ -154,7 +153,7 @@ namespace BiblioNet.Classes
                 Langue = value;
             }
         }
-
+        
         public string Couverture
         {
             get
@@ -167,7 +166,7 @@ namespace BiblioNet.Classes
                 couverture = value;
             }
         }
-
+        
         internal Edition UneEdition
         {
             get
@@ -180,7 +179,7 @@ namespace BiblioNet.Classes
                 uneEdition = value;
             }
         }
-
+        
         internal Genre UnGenre1
         {
             get
@@ -194,7 +193,7 @@ namespace BiblioNet.Classes
             }
         }
 
-     */
+     
     }
 }
        
