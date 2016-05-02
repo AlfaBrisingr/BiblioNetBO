@@ -126,7 +126,8 @@ namespace BiblioNet
 
         private void buttonDetail_Click(object sender, EventArgs e)
         {
-            GestionDetails MaFenetreDetails = new GestionDetails();
+            NumCommandeCourante = NumCommandeCourante - 1;
+            var MaFenetreDetails = new GestionDetails(M_Quantite.getQuantitebyCommande(NumCommandeCourante));
             MaFenetreDetails.Show();
             MaFenetreDetails.Text = "Les détails de la commande "; //ajouter le code de la commande
         }

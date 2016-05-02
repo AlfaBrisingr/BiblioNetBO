@@ -32,3 +32,7 @@ C:\Users\nicol_000\Source\Repos\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.Gestio
 C:\Users\nicol_000\Source\Repos\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.Properties.Resources.resources
 C:\Users\nicol_000\Source\Repos\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.csproj.GenerateResource.Cache
 C:\Users\nicol_000\Source\Repos\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.GestionLivre.resources
+C:\Users\Oceane\Documents\GitHubVisualStudio\BiblioNetBO\BiblioNet\bin\Debug\BiblioNet.exe.config
+C:\Users\Oceane\Documents\GitHubVisualStudio\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.exe
+C:\Users\Oceane\Documents\GitHubVisualStudio\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.pdb
+C:\Users\Oceane\Documents\GitHubVisualStudio\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.csprojResolveAssemblyReference.cache

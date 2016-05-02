@@ -63,12 +63,12 @@ namespace BiblioNet.Classes
             this.quantiteprod = QuantiteProd;
         }
 
-        public int getNoLivre()
+        public int getLivre()
         {
             return this.noLivre;
         }
 
-        public int getNoCommande()
+        public int getCommande()
         {
             return this.noCommande;
         }

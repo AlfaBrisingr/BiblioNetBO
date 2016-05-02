@@ -3,6 +3,7 @@ using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,35 +13,35 @@ namespace BiblioNet.Models
 {
     class M_Quantite
     {
-        public static Collection<Quantite> getQuantite()
+        public static DataTable getQuantitebyCommande(int NoCommande)
         {
-            Collection<Quantite> mesQuantites = new Collection<Quantite>();
-
+            var ds = new DataSet();
+            var dt = new DataTable("Quantite");
             try
             {
-                mesQuantites.Clear();
                 bdd.GestBiblioNetConn.Open();
 
-                String SQL = "SELECT * FROM Quantite ";
+                var sql = "SELECT Livre.Nom as 'Nom du Livre', Quantite.Quantite as 'Quantite', Livre.Tarif as 'Prix unitaire', (Livre.Tarif * Quantite.Quantite) as 'Montant HT (en euros)' FROM Quantite INNER JOIN Livre ON Livre.NumLivre = Quantite.NoLivres WHERE NumCommande = ?";
 
-                MySqlDataReader MonReaderQuantite;
-                MySqlCommand Command1 = new MySqlCommand(SQL, bdd.GestBiblioNetConn);
-                MonReaderQuantite = Command1.ExecuteReader();
-
-                Quantite nouvelleQuantite;
-                while (MonReaderQuantite.Read())
-                {
-                    nouvelleQuantite = new Quantite(int.Parse(MonReaderQuantite[0].ToString()), int.Parse(MonReaderQuantite[1].ToString()), int.Parse(MonReaderQuantite[3].ToString()));
-                    mesQuantites.Add(nouvelleQuantite);
-                }
+                var da = new MySqlDataAdapter(sql, bdd.GestBiblioNetConn);
+                da.SelectCommand.Parameters.AddWithValue("@param", NoCommande);
+                da.Fill(ds, "Quantite");
+                dt = ds.Tables["Quantite"];
+                if (dt.Rows.Count == 0)
+                    throw new Exception("Aucun article ! ");
                 bdd.GestBiblioNetConn.Close();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                MessageBox.Show("Erreur : " + ex.Message);
+                MessageBox.Show(e.Message);
+            }
+            finally
+            {
+                bdd.GestBiblioNetConn.Close();
             }
 
-            return mesQuantites;
+            return dt;
         }
+       
     }
 }
