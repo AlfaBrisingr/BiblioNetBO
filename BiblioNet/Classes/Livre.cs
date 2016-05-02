@@ -12,28 +12,29 @@ namespace BiblioNet.Classes
         private String CodeISBN;
         private String NonLivre;
         private Auteur UnAuteur;
-        private int QuantiteStock;
-        private DateTime DateSortie;
+        /*private int QuantiteStock;
+        private String DateSortie;
         private int Tarif;
         private String Resume;
         private String Langue;
         private String couverture;
         private Edition uneEdition;
-        private Genre UnGenre;
+        private Genre UnGenre;*/
 
-        public Livre(int numLivre ,String CodeISBN, String NonLivre, Auteur UnAuteur, int QuantiteStock, DateTime DateSortie, int Tarif, String Resume, String Langue,String couverture, Edition uneEdition, Genre UnGenre)
+        public Livre(int numLivre ,String CodeISBN, String NonLivre, Auteur UnAuteur/*, int QuantiteStock, String DateSortie, int Tarif, String Resume, String Langue,String couverture, Edition uneEdition, Genre UnGenre)*/)
         {
             this.numLivre = numLivre;
             this.CodeISBN = CodeISBN;
             this.NonLivre = NonLivre;
-            this.QuantiteStock = QuantiteStock;
+            this.UnAuteur = UnAuteur;
+            /*this.QuantiteStock = QuantiteStock;
             this.DateSortie = DateSortie;
             this.Tarif = Tarif;
             this.Resume = Resume;
             this.Langue = Langue;
             this.couverture = couverture;
             this.uneEdition = uneEdition;
-            this.UnGenre = UnGenre;
+            this.UnGenre = UnGenre;*/
 
         }
         public int NumLivre
@@ -88,7 +89,7 @@ namespace BiblioNet.Classes
                 UnAuteur = value;
             }
         }
-
+        /*
         public int QuantiteStock1
         {
             get
@@ -102,7 +103,7 @@ namespace BiblioNet.Classes
             }
         }
 
-        public DateTime DateSortie1
+        public String DateSortie1
         {
             get
             {
@@ -193,7 +194,7 @@ namespace BiblioNet.Classes
             }
         }
 
-     
+     */
     }
 }
        

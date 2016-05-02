@@ -52,8 +52,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.BoxISBN = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.BoxNomLivre = new System.Windows.Forms.TextBox();
+            this.BoxNonAuteur = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.BoxTarif = new System.Windows.Forms.TextBox();
@@ -285,19 +285,19 @@
             this.BoxISBN.Size = new System.Drawing.Size(100, 20);
             this.BoxISBN.TabIndex = 40;
             // 
-            // textBox2
+            // BoxNomLivre
             // 
-            this.textBox2.Location = new System.Drawing.Point(295, 38);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 41;
+            this.BoxNomLivre.Location = new System.Drawing.Point(295, 38);
+            this.BoxNomLivre.Name = "BoxNomLivre";
+            this.BoxNomLivre.Size = new System.Drawing.Size(178, 20);
+            this.BoxNomLivre.TabIndex = 41;
             // 
-            // textBox3
+            // BoxNonAuteur
             // 
-            this.textBox3.Location = new System.Drawing.Point(100, 66);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(99, 20);
-            this.textBox3.TabIndex = 42;
+            this.BoxNonAuteur.Location = new System.Drawing.Point(100, 66);
+            this.BoxNonAuteur.Name = "BoxNonAuteur";
+            this.BoxNonAuteur.Size = new System.Drawing.Size(99, 20);
+            this.BoxNonAuteur.TabIndex = 42;
             // 
             // textBox4
             // 
@@ -345,8 +345,8 @@
             this.Controls.Add(this.BoxTarif);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.BoxNonAuteur);
+            this.Controls.Add(this.BoxNomLivre);
             this.Controls.Add(this.BoxISBN);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
@@ -403,8 +403,8 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox BoxISBN;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox BoxNomLivre;
+        private System.Windows.Forms.TextBox BoxNonAuteur;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox BoxTarif;

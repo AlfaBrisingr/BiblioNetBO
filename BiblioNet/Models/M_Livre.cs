@@ -30,7 +30,7 @@ namespace BiblioNet.Models
                 Livre nouvelleLivre;
                 while (MonReaderLivre.Read())
                 {
-                    nouvelleLivre = new Livre(int.Parse(MonReaderLivre[0].ToString()), MonReaderLivre[1].ToString(), MonReaderLivre[2].ToString(),new Auteur(int.Parse(MonReaderLivre[3].ToString()), MonReaderLivre[13].ToString()),int.Parse(MonReaderLivre[4].ToString()), MonReaderLivre.GetDateTime(MonReaderLivre.GetOrdinal("DateSortie")), int.Parse(MonReaderLivre[6].ToString()), MonReaderLivre[7].ToString(), MonReaderLivre[8].ToString(), MonReaderLivre[9].ToString(),new Edition(int.Parse(MonReaderLivre[10].ToString()), MonReaderLivre[15].ToString()),new Genre(int.Parse(MonReaderLivre[16].ToString()), MonReaderLivre[17].ToString()));
+                    nouvelleLivre = new Livre(int.Parse(MonReaderLivre[0].ToString()), MonReaderLivre[1].ToString(), MonReaderLivre[2].ToString(), new Auteur(int.Parse(MonReaderLivre[12].ToString()), MonReaderLivre[13].ToString()));
                     mesLivres.Add(nouvelleLivre);
                 }
                 bdd.GestBiblioNetConn.Close();

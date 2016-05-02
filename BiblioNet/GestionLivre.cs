@@ -40,7 +40,10 @@ namespace BiblioNet
         }
         private void AffecterValeurs(Livre unlivre)
         {
-            BoxResume.Text = unlivre.Resume1;
+            labNoLivre.Text =unlivre.NumLivre.ToString();
+            BoxISBN.Text = unlivre.CodeISBN1.ToString();
+            BoxNomLivre.Text = unlivre.NonLivre1.ToString();
+            BoxNonAuteur.Text = unlivre.UnAuteur1.NonAuteur1.ToString();
             VerouillerBouton();
         }
         public void VerouillerBouton()

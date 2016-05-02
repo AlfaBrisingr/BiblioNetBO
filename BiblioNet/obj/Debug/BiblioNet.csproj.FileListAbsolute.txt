@@ -50,3 +50,16 @@ D:\Documents\VisualStudioGitHub\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.Gestio
 D:\Documents\VisualStudioGitHub\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.GestionUtilisateurs.resources
 D:\Documents\VisualStudioGitHub\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.Properties.Resources.resources
 D:\Documents\VisualStudioGitHub\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.csproj.GenerateResource.Cache
+C:\Users\nicol_000\Documents\BTS SIO\deusimen anner\PPE\BiblioNetBO\BiblioNet\bin\Debug\BiblioNet.exe.config
+C:\Users\nicol_000\Documents\BTS SIO\deusimen anner\PPE\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.exe
+C:\Users\nicol_000\Documents\BTS SIO\deusimen anner\PPE\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.pdb
+C:\Users\nicol_000\Documents\BTS SIO\deusimen anner\PPE\BiblioNetBO\BiblioNet\bin\Debug\BiblioNet.exe
+C:\Users\nicol_000\Documents\BTS SIO\deusimen anner\PPE\BiblioNetBO\BiblioNet\bin\Debug\BiblioNet.pdb
+C:\Users\nicol_000\Documents\BTS SIO\deusimen anner\PPE\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.csprojResolveAssemblyReference.cache
+C:\Users\nicol_000\Documents\BTS SIO\deusimen anner\PPE\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.BiblioNet.resources
+C:\Users\nicol_000\Documents\BTS SIO\deusimen anner\PPE\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.GestionCommande.resources
+C:\Users\nicol_000\Documents\BTS SIO\deusimen anner\PPE\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.GestionDetails.resources
+C:\Users\nicol_000\Documents\BTS SIO\deusimen anner\PPE\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.GestionLivre.resources
+C:\Users\nicol_000\Documents\BTS SIO\deusimen anner\PPE\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.GestionUtilisateurs.resources
+C:\Users\nicol_000\Documents\BTS SIO\deusimen anner\PPE\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.Properties.Resources.resources
+C:\Users\nicol_000\Documents\BTS SIO\deusimen anner\PPE\BiblioNetBO\BiblioNet\obj\Debug\BiblioNet.csproj.GenerateResource.Cache
