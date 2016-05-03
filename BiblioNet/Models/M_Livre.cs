@@ -46,6 +46,40 @@ namespace BiblioNet.Models
 
             return mesLivres;
         }
+        public static void ModifLivre(Livre unlivre)
+        {
+            String SQL = "UPDATE Livre SET numLivre = ?,CodeISBN = ?, Password = ?,AdresseMail = ?,Adresse = ?,CodePostal = ?,Ville = ? WHERE NumUser = ?";
+
+            bdd.GestBiblioNetConn.Open();
+
+            MySqlCommand Command1 = new MySqlCommand(SQL, bdd.GestBiblioNetConn);
+
+            MySqlParameter Param1 = Command1.Parameters.Add("@Nom", MySqlDbType.VarChar);
+            MySqlParameter Param2 = Command1.Parameters.Add("@Prenom", MySqlDbType.VarChar);
+            MySqlParameter Param3 = Command1.Parameters.Add("@Password", MySqlDbType.VarChar);
+            MySqlParameter Param4 = Command1.Parameters.Add("@AdresseMail", MySqlDbType.VarChar);
+            MySqlParameter Param5 = Command1.Parameters.Add("@Adresse", MySqlDbType.VarChar);
+            MySqlParameter Param6 = Command1.Parameters.Add("@CodePostal", MySqlDbType.VarChar);
+            MySqlParameter Param7 = Command1.Parameters.Add("@Ville", MySqlDbType.VarChar);
+            MySqlParameter Param8 = Command1.Parameters.Add("@NumUser", MySqlDbType.Int16);
+
+
+
+            Param1.Value = unUser.Nom;
+            Param2.Value = unUser.Prenom;
+            Param3.Value = unUser.Password;
+            Param4.Value = unUser.AdresseMail;
+            Param5.Value = unUser.Adresse;
+            Param6.Value = unUser.CodePostal;
+            Param7.Value = unUser.Ville;
+            Param8.Value = unUser.NumUser;
+
+
+            Command1.ExecuteNonQuery();
+
+            bdd.GestBiblioNetConn.Close();
+        }
+
 
     }
 }

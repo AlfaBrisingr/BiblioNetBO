@@ -30,20 +30,7 @@ namespace BiblioNet
                 collLivre = new Collection<Livre>();
                 collLivre = M_Livre.getLivre();
                 NumLivreCourante = 1;
-                BoutonModifier.Enabled = true;
-                BoutonValider.Enabled = false;
-                BoutonAjouter.Enabled = true;
-                BoutonAnnuler.Enabled = false;
-                BoxNomLivre.Enabled = false;
-                BoxISBN.Enabled = false;
-                BoxNonAuteur.Enabled = false;
-                BoxQuantiteStock.Enabled = false;
-                BoxDateSortie.Enabled = false;
-                BoxTarif.Enabled = false;
-                BoxResume.Enabled = false;
-                BoxLangue.Enabled = false;
-                BoxEdition.Enabled = false;
-                BoxGenre.Enabled = false;
+              
 
                 AffecterValeurs(collLivre[NumLivreCourante - 1]);
 
@@ -56,6 +43,20 @@ namespace BiblioNet
         }
         private void AffecterValeurs(Livre unlivre)
         {
+            BoutonModifier.Enabled = true;
+            BoutonValider.Enabled = false;
+            BoutonAjouter.Enabled = true;
+            BoutonAnnuler.Enabled = false;
+            BoxNomLivre.Enabled = false;
+            BoxISBN.Enabled = false;
+            BoxNonAuteur.Enabled = false;
+            BoxQuantiteStock.Enabled = false;
+            BoxDateSortie.Enabled = false;
+            BoxTarif.Enabled = false;
+            BoxResume.Enabled = false;
+            BoxLangue.Enabled = false;
+            BoxEdition.Enabled = false;
+            BoxGenre.Enabled = false;
             labNoLivre.Text =unlivre.NumLivre.ToString();
             BoxISBN.Text = unlivre.CodeISBN1.ToString();
             BoxNomLivre.Text = unlivre.NonLivre1.ToString();
@@ -214,15 +215,38 @@ namespace BiblioNet
         {
             if (TokenMandA == 1)
             {
-                collLivre = new Collection<Livre>();
-                collLivre = M_Livre.getLivre();
-                BoutonModifier.Enabled = true;
-                BoutonValider.Enabled = false;
-                BoutonAjouter.Enabled = true;
-                BoutonAnnuler.Enabled = false;
-                AffecterValeurs(collLivre[NumLivreCourante - 1]);
+                try
+                {
+
+                    Livre unlivre = new Livre(int.Parse(labNoLivre.Text), BoxISBN.Text, BoxNomLivre.Text,new Auteur(int.Parse(collLivre[NumLivreCourante - 1].UnAuteur1.NumAuteur1.ToString()), BoxNonAuteur.Text),int.Parse(BoxQuantiteStock.Text),BoxDateSortie.Text,BoxTarif.Text,BoxResume.Text,BoxLangue.Text, collLivre[NumLivreCourante - 1].Couverture.ToString(),new Edition(int.Parse(collLivre[NumLivreCourante - 1].UneEdition.NumEdition1.ToString()),BoxEdition.Text),new Genre(int.Parse(collLivre[NumLivreCourante-1].UnGenre1.NumGenre1.ToString()),BoxGenre.Text));
+                    M_Livre.ModifLivre(unlivre);
+                    reset();
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erreur : " + ex.Message);
+                }
+                
+               
+            }
+            else
+            {
+                reset();
+               
             }
         }
+        private void reset()
+        {
+            collLivre = new Collection<Livre>();
+            collLivre = M_Livre.getLivre();
+            BoutonModifier.Enabled = true;
+            BoutonValider.Enabled = false;
+            BoutonAjouter.Enabled = true;
+            BoutonAnnuler.Enabled = false;
+            AffecterValeurs(collLivre[NumLivreCourante - 1]);
+        }
+
     }
            
     }
