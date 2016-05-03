@@ -1,0 +1,9 @@
+D:\Documents\VisualStudioGitHub\BiblioNetBO\BiblioNet\bin\Release\BiblioNet.exe.config
+D:\Documents\VisualStudioGitHub\BiblioNetBO\BiblioNet\obj\Release\BiblioNet.csprojResolveAssemblyReference.cache
+D:\Documents\VisualStudioGitHub\BiblioNetBO\BiblioNet\obj\Release\BiblioNet.BiblioNet.resources
+D:\Documents\VisualStudioGitHub\BiblioNetBO\BiblioNet\obj\Release\BiblioNet.GestionCommande.resources
+D:\Documents\VisualStudioGitHub\BiblioNetBO\BiblioNet\obj\Release\BiblioNet.GestionDetails.resources
+D:\Documents\VisualStudioGitHub\BiblioNetBO\BiblioNet\obj\Release\BiblioNet.GestionLivre.resources
+D:\Documents\VisualStudioGitHub\BiblioNetBO\BiblioNet\obj\Release\BiblioNet.GestionUtilisateurs.resources
+D:\Documents\VisualStudioGitHub\BiblioNetBO\BiblioNet\obj\Release\BiblioNet.Properties.Resources.resources
+D:\Documents\VisualStudioGitHub\BiblioNetBO\BiblioNet\obj\Release\BiblioNet.csproj.GenerateResource.Cache

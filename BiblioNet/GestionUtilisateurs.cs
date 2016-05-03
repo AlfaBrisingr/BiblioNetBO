@@ -16,9 +16,6 @@ namespace BiblioNet
 {
     public partial class GestionUtilisateurs : Form
     {
-
-        Collection<Utilisateur> collUser;
-
         private DataTable datatable = new DataTable();
 
         public GestionUtilisateurs()
@@ -113,7 +110,10 @@ namespace BiblioNet
                 BoxVille.Enabled = false;
                 BtnSupprimer.Enabled = true;
                 BtnModifier.Enabled = true;
+                BtnAnnuler.Enabled = false;
+                BtnValider.Enabled = false;
                 Utilisateur User = M_Utilisateur.getUser(int.Parse(LblCode.Text));
+            
                 AffecterValeurs(User);
             }
             catch (Exception ex)
