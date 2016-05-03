@@ -147,8 +147,9 @@ namespace BiblioNet
 
                 if (MessageBox.Show("Voulez-vous supprimer l'utilisateur ?", "Suppression d'un Utilisateur", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-
-                    M_Utilisateur.SupprimerUser(new Utilisateur(int.Parse(LblCode.Text), BoxNom.Text, BoxPrenom.Text, BoxMDP.Text, BoxMail.Text, BoxAdresse.Text, BoxCp.Text, BoxVille.Text));
+                    var User = new Utilisateur(int.Parse(LblCode.Text), BoxNom.Text, BoxPrenom.Text, BoxMDP.Text, BoxMail.Text, BoxAdresse.Text, BoxCp.Text, BoxVille.Text);
+                    User.MesCommandesUser = M_Commande.getCommandesUser(User);
+                    M_Utilisateur.SupprimerUser(User);
                     TableauUser.DataSource = M_Utilisateur.getLesUser();
 
                 }

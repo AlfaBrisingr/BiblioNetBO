@@ -42,6 +42,24 @@ namespace BiblioNet.Models
 
             return dt;
         }
-       
+
+        public static void SupprimerQuantitebyCommande(Commande uneCommande)
+        {
+            String SQL = "DELETE FROM Quantite WHERE NoCommande = ?";
+
+            bdd.GestBiblioNetConn.Open();
+
+            MySqlCommand Command1 = new MySqlCommand(SQL, bdd.GestBiblioNetConn);
+
+            MySqlParameter Param1 = Command1.Parameters.Add("@NoCommande", MySqlDbType.VarChar);
+
+            Param1.Value = uneCommande.NumCommande;
+
+
+            Command1.ExecuteNonQuery();
+
+            bdd.GestBiblioNetConn.Close();
+        }
+
     }
 }

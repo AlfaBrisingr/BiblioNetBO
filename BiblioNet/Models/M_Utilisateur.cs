@@ -33,6 +33,7 @@ namespace BiblioNet.Models
                 while (MonReaderUtilisateur.Read())
                 {
                     nouveauUser = new Utilisateur(int.Parse(MonReaderUtilisateur[0].ToString()), MonReaderUtilisateur[1].ToString(), MonReaderUtilisateur[2].ToString(), MonReaderUtilisateur[3].ToString(), MonReaderUtilisateur[4].ToString(), MonReaderUtilisateur[5].ToString(), MonReaderUtilisateur[6].ToString(), MonReaderUtilisateur[7].ToString());
+                    nouveauUser.MesCommandesUser = M_Commande.getCommandesUser(nouveauUser);
                     mesUsers.Add(nouveauUser);
                 }
 
@@ -83,6 +84,15 @@ namespace BiblioNet.Models
 
         public static void SupprimerUser(Utilisateur unUser)
         {
+            MessageBox.Show("Blo");
+            foreach (Commande uneCommande in unUser.MesCommandesUser)
+            {
+                MessageBox.Show("Bla");
+                M_Quantite.SupprimerQuantitebyCommande(uneCommande);
+            }
+            //M_Quantite.SupprimerQuantitebyCommande(unUser.MesCommandesUser);
+            M_Commande.SupprimerCommandebyUser(unUser);
+            
             String SQL = "DELETE FROM Utilisateur WHERE NumUser = ?";
 
             bdd.GestBiblioNetConn.Open();
